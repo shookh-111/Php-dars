@@ -1,28 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoookh</title>
-</head>
-<body>
-
 <?php
+ $hafta = 7;
+  switch ($hafta){
+  case 1;
+  echo "dushanba";
+  break;
 
-$x = 10;
-$y = 5;
-
-$yigindi = $x + $y;
-$ayirma = $x - $y;
-$kopaytma = $x * $y;
-$bolinma = $x / $y;
+   
+  case 2;
+  echo "seshanba";
+  break;
 
 
-echo "Yig‘indi = $yigindi <br>";
-echo "Ayirma = $ayirma <br>";
-echo "Ko‘paytma = $kopaytma <br>";
-echo "Bo‘linma = $bolinma <br>";
+  case 3;
+  echo "chorshanba";
+  break;
+
+ case 4;
+  echo "payshanba";
+  break;
+
+ case 5;
+  echo "juma";
+  break;
+
+ case 6;
+  echo "shanba";
+  break;
+
+   case 7;
+  echo "yakshanba";
+  break;
+
+default:
+echo "bunday hafta kun yoq";
+  }
+
+
 ?>
-
-</body>
-</html>
