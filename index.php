@@ -1,18 +1,24 @@
 <?php
-class Fruit {
-  // Properties
-  public $name;
-  public $color;
+class Avtomobillar{
+    public $name;
+    public $color;
+    public $year;
+    public $model;
+    public $vazni;
 
-  // Method to set the properties
-  function set_details($name, $color) {
-    $this->name = $name;
-    $this->color = $color;
-  }
+    function __construct ($name,$color,$year,$model,$vazni){
+        $this->name = $name;
+        $this->color = $color;
+        $this->year = $year;
+        $this->model = $model;
+        $this->vazni = $vazni;
 
-  // Method to display the properties
-  function get_details() {
-    echo "Name: " . $this->name . ". Color: " . $this->color .".<br>";
-  }
+        }
+    function shookh(){
+        echo "yangi avtomabil nomi". " ". $this-> name . " ". "rangi"." ". $this-> color.
+        " "."ishlab chiqarilgan yili"." ". $this-> year. "va modeli"." ". $this-> model. "Avtomabil vazni"." ". $this-> vazni . "<br>";
+    }
 }
+$bmw = new Avtomobillar('BMW','qizil','2025','M5','1444KG');
+$bmw-> shookh();
 ?>
